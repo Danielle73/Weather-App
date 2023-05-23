@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgb(154, 202, 244);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  max-width: 300px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-family: arial;
+  background-color: white ;
+}
+
+h2 {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.search{
+  margin: 20px;
+}
+
+.searchBar {
+  width: 150px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  text-align: center;
+}
+
+button {
+  padding: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.city {
+  font-size: 35px;
+}
+
+.sentenceContainer,
+.temp {
+  padding:10px;
+}
+
+
+.icon,
+.description,
+.humidity,
+.windspeed {
+  padding: 5px;
+  text-align:left;
+  font-size: 12px;
+}

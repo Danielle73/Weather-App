@@ -1,0 +1,3 @@
+# Ignore the config.js & test.js files
+config.js
+test.js
