@@ -1,4 +1,9 @@
+//I opted to create a new file in order to store my API key off public. 
 import API_KEY from './config';
+
+// Alternatively create a const to represent your API key in order for your code to work locally. 
+
+// const myApiKey = "INSERT YOUR API KEY HERE" 
 
 const searchButton = document.querySelector('button');
 const locationInput = document.querySelector('.searchBar');
@@ -13,10 +18,8 @@ const weatherImages = document.getElementById('weatherImages');
 
 
 /*
-Switch function has to use true as the expression; this is because the case is being
-evaluated.  
+Switch function has to use true as the expression; this is because the case is being evaluated.  
 */
-
 
 function weatherForecast(temperatureOutside) {
   switch (true) {
@@ -53,6 +56,7 @@ function getWeatherInfo() {
   const location = locationInput.value;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}&units=metric`;
 
+  //Make sure when you are using your own personal ApiKey, its correctly referenced within the URL:
   //const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${myApiKey}&units=metric`;
 
   fetch(url)
